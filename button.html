@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+<title>Web Dev Lab 4 Q4 </title>
+
+</head>
+
+<body>
+
+
+    <div id="colorBox" style="width: 200px; height: 100px; background-color: red;">
+         </div>
+
+         <button onclick="toggleColor()"> Toggle Color </button>
+
+    <script>
+
+         function toggleColor() {
+            
+            const colorBox = document.getElementById("colorBox");
+    
+            if (colorBox.style.backgroundColor === "red") {
+                colorBox.style.backgroundColor = "blue";
+            } else {
+                colorBox.style.backgroundColor = "red";
+            }
+        }
+    </script>
+ 
+
+</body>
+
+</html>

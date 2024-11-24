@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+<title>Web Dev Lab 4 Q 2</title>
+
+</head>
+
+<body>
+
+    <input type="text" id="userInput" placeholder="Enter a number ">
+    <button onclick="checkInput()">Check </button>
+ 
+    <script>
+        function checkInput() {
+        
+           let number =parseInt(document.getElementById("userInput").value);
+
+           if (number > 10 ){
+            alert (" The Number is higer than 10 ");
+           }
+
+           else if (number<=10 ){
+            alert("The Number is Lower Than 10 ");
+           }
+
+           else{
+            alert(" Please Insert a number ");
+           }
+        }
+
+        
+    </script>
+
+</body>
+
+</html>
