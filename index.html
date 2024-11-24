@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+<title>Web Dev Lab 4</title>
+
+</head>
+
+<body>
+
+    <input type="text" id="userInput" placeholder="Enter a number ">
+    <button onclick="checkInput()">Check </button>
+
+    <p id="demo"> </p>
+    
+     
+    <script>
+        function checkInput() {
+        
+            const input = document.getElementById("userInput").value;
+
+            
+            if (isNaN(input) || input.trim() === "") {
+                alert("Please insert a number!");
+            } else {
+                const number = parseFloat(input); 
+                if (number < 10) {
+                    alert("The number is lower than 10");
+                } else {
+                    alert("The number is higher than 10");
+                }
+            }
+        }
+
+        
+    </script>
+
+</body>
+
+</html>
